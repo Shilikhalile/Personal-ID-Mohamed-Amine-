@@ -1,291 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mohamed Amine Shili | Personal ID</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Personal ID de Mohamed Amine Shili — maintenance biomédicale à Tunis.">
+  <title>Mohamed Amine Shili — Personal ID</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <div class="page">
-
-        <main class="card">
-
-            <!-- PROFILE -->
-
-            <section class="top">
-
-                <img
-                    class="profile-photo"
-                    src="Screenshot_20260915-140441.png"
-                    alt="Photo de Mohamed Amine Shili"
-                >
-
-                <div class="profile-text">
-
-                    <div class="label">
-                        PERSONAL ID
-                    </div>
-
-                    <h1>
-                        Mohamed Amine Shili
-                    </h1>
-
-                    <p>
-                        Tunis — Tunisie
-                    </p>
-
-                </div>
-
-            </section>
-
-
-            <!-- PROFESSION -->
-
-            <section class="profession">
-
-                🔧 Maintenance biomédicale
-
-            </section>
-
-
-            <!-- INFORMATION -->
-
-            <section class="info">
-
-                <div class="item">
-
-                    <div class="icon">
-                        📞
-                    </div>
-
-                    <div>
-                        <small>Téléphone</small>
-
-                        <strong>
-                            57030978
-                        </strong>
-                    </div>
-
-                </div>
-
-
-                <div class="item">
-
-                    <div class="icon">
-                        💬
-                    </div>
-
-                    <div>
-                        <small>WhatsApp</small>
-
-                        <strong>
-                            +216 93 484 789
-                        </strong>
-                    </div>
-
-                </div>
-
-
-                <div class="item">
-
-                    <div class="icon">
-                        📍
-                    </div>
-
-                    <div>
-                        <small>Adresse</small>
-
-                        <strong>
-                            Tunis, Tunisie
-                        </strong>
-                    </div>
-
-                </div>
-
-            </section>
-
-
-            <!-- MAIN 3D BUTTONS -->
-
-            <section class="buttons">
-
-                <a
-                    class="button"
-                    href="tel:+21657030978"
-                >
-                    📞 Appeler
-                </a>
-
-
-                <a
-                    class="button"
-                    href="https://wa.me/21693484789"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    💬 WhatsApp
-                </a>
-
-            </section>
-
-
-            <!-- SOCIAL NETWORKS -->
-
-            <section class="social">
-
-                <h2>
-                    Réseaux sociaux
-                </h2>
-
-
-                <!-- INSTAGRAM -->
-
-                <a
-                    class="button dark"
-                    href="https://www.instagram.com/muhammad.amin.shili?stkn=MW5uemI2bGtkMm84Yw=="
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    📸 Instagram
-                </a>
-
-
-                <!-- TELEGRAM -->
-
-                <a
-                    class="button dark"
-                    href="https://t.me/Muhamadaminshili"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    ✈️ Telegram
-                </a>
-
-
-                <!-- WHATSAPP -->
-
-                <a
-                    class="button dark"
-                    href="https://wa.me/21693484789"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    💚 WhatsApp
-                </a>
-
-            </section>
-
-
-            <!-- QR CODE -->
-
-            <section class="qr">
-
-                <h2>
-                    Scan Personal ID
-                </h2>
-
-                <p>
-                    Scannez le QR Code pour accéder aux informations.
-                </p>
-
-
-                <!-- QR CODE CORRECT -->
-
-                <img
-                    src="Screenshot_20260915-151410.png"
-                    alt="QR Code de Mohamed Amine Shili"
-                >
-
-
-                <!-- DOWNLOAD QR -->
-
-                <a
-                    class="button download"
-                    href="Screenshot_20260915-151410.png"
-                    download="Mohamed-Amine-Shili-QR.png"
-                >
-                    ⬇️ Télécharger le QR
-                </a>
-
-            </section>
-
-
-            <!-- FOOTER -->
-
-            <footer>
-
-                © 2026 Mohamed Amine Shili
-
-            </footer>
-
-        </main>
-
-    </div>
-
-
-    <!-- MOVING LIGHT -->
-
-    <script>
-
-        const card = document.querySelector(".card");
-
-
-        document.addEventListener("mousemove", function(event) {
-
-            const rect = card.getBoundingClientRect();
-
-            const x = event.clientX - rect.left;
-
-            const y = event.clientY - rect.top;
-
-
-            card.style.setProperty(
-                "--mouse-x",
-                x + "px"
-            );
-
-            card.style.setProperty(
-                "--mouse-y",
-                y + "px"
-            );
-
-        });
-
-
-        document.addEventListener("touchmove", function(event) {
-
-            if (event.touches.length === 0) return;
-
-
-            const rect = card.getBoundingClientRect();
-
-            const x =
-                event.touches[0].clientX - rect.left;
-
-            const y =
-                event.touches[0].clientY - rect.top;
-
-
-            card.style.setProperty(
-                "--mouse-x",
-                x + "px"
-            );
-
-            card.style.setProperty(
-                "--mouse-y",
-                y + "px"
-            );
-
-        });
-
-    </script>
-
+  <main class="page-shell">
+    <article class="profile-card">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Personal ID <span class="eyebrow-line"></span> 2026</div>
+          <h1>Mohamed Amine<br><em>Shili</em></h1>
+          <p class="intro">Technicien en maintenance biomédicale, basé à Tunis.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="tel:+21657030978"><span class="btn-icon">↗</span> Appeler maintenant</a>
+            <a class="btn btn-ghost" href="https://wa.me/21693484789" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait-ring"></div>
+          <img class="profile-photo" src="Screenshot_20260915-140441.png" alt="Portrait de Mohamed Amine Shili">
+          <span class="portrait-tag">TUNIS, TN</span>
+        </div>
+      </header>
+
+      <div class="divider"></div>
+
+      <section class="details-grid" aria-label="Informations de contact">
+        <div class="detail-card">
+          <span class="detail-icon" aria-hidden="true">⌕</span>
+          <div><span class="detail-label">Téléphone</span><a href="tel:+21657030978">+216 57 030 978</a></div>
+        </div>
+        <div class="detail-card">
+          <span class="detail-icon" aria-hidden="true">◌</span>
+          <div><span class="detail-label">WhatsApp</span><a href="https://wa.me/21693484789" target="_blank" rel="noopener noreferrer">+216 93 484 789</a></div>
+        </div>
+        <div class="detail-card">
+          <span class="detail-icon" aria-hidden="true">⌖</span>
+          <div><span class="detail-label">Localisation</span><strong>Tunis, Tunisie</strong></div>
+        </div>
+      </section>
+
+      <section class="content-columns">
+        <div class="social-panel">
+          <div class="section-heading"><span>01</span><h2>Réseaux sociaux</h2></div>
+          <p class="section-description">Retrouvez-moi et échangeons directement.</p>
+          <div class="social-list">
+            <a class="social-link" href="https://www.instagram.com/muhammad.amin.shili?stkn=MW5uemI2bGtkMm84Yw==" target="_blank" rel="noopener noreferrer"><span class="social-mark instagram">◎</span><span><b>Instagram</b><small>@muhammad.amin.shili</small></span><span class="arrow">↗</span></a>
+            <a class="social-link" href="https://t.me/Muhamadaminshili" target="_blank" rel="noopener noreferrer"><span class="social-mark telegram">➤</span><span><b>Telegram</b><small>@Muhamadaminshili</small></span><span class="arrow">↗</span></a>
+            <a class="social-link" href="https://wa.me/21693484789" target="_blank" rel="noopener noreferrer"><span class="social-mark whatsapp">◌</span><span><b>WhatsApp</b><small>Message direct</small></span><span class="arrow">↗</span></a>
+          </div>
+        </div>
+
+        <div class="qr-panel">
+          <div class="section-heading"><span>02</span><h2>Mon contact</h2></div>
+          <p class="section-description">Scannez pour enregistrer mes coordonnées.</p>
+          <div class="qr-box"><img src="Screenshot_20260915-151410.png" alt="QR code de contact de Mohamed Amine Shili"></div>
+          <a class="download-link" href="Screenshot_20260915-151410.png" download="Mohamed-Amine-Shili-QR.png">Télécharger le QR code <span>↓</span></a>
+        </div>
+      </section>
+
+      <footer><span>© <span id="year">2026</span> Mohamed Amine Shili</span><span class="footer-note">Créé avec précision · Tunis</span></footer>
+    </article>
+  </main>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const card = document.querySelector('.profile-card');
+    window.addEventListener('pointermove', (event) => {
+      const rect = card.getBoundingClientRect();
+      card.style.setProperty('--pointer-x', `${event.clientX - rect.left}px`);
+      card.style.setProperty('--pointer-y', `${event.clientY - rect.top}px`);
+    }, { passive: true });
+  </script>
 </body>
-
 </html>
