@@ -22,9 +22,10 @@
           <div class="eyebrow"><span class="status-dot"></span> Personal ID <span class="eyebrow-line"></span> 2026</div>
           <h1>Mohamed Amine<br><em>Shili</em></h1>
           <p class="intro">Technicien en maintenance biomédicale, basé à Tunis.</p>
+          <div class="availability"><span></span> Disponible pour de nouvelles opportunités</div>
           <div class="hero-actions">
             <a class="btn btn-primary" href="tel:+21657030978"><span class="btn-icon">↗</span> Appeler maintenant</a>
-            <a class="btn btn-ghost" href="https://wa.me/21693484789" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">→</span></a>
+            <a class="btn btn-ghost" href="Mohamed-Amine-Shili.vcf" download="Mohamed-Amine-Shili.vcf">Enregistrer le contact <span aria-hidden="true">↓</span></a>
           </div>
         </div>
         <div class="portrait-wrap">
@@ -39,11 +40,11 @@
       <section class="details-grid" aria-label="Informations de contact">
         <div class="detail-card">
           <span class="detail-icon" aria-hidden="true">⌕</span>
-          <div><span class="detail-label">Téléphone</span><a href="tel:+21657030978">+216 57 030 978</a></div>
+          <div><span class="detail-label">Téléphone</span><a href="tel:+21657030978">+216 57 030 978</a></div><button class="copy-button" data-copy="+21657030978" aria-label="Copier le numéro de téléphone">Copier</button>
         </div>
         <div class="detail-card">
           <span class="detail-icon" aria-hidden="true">◌</span>
-          <div><span class="detail-label">WhatsApp</span><a href="https://wa.me/21693484789" target="_blank" rel="noopener noreferrer">+216 93 484 789</a></div>
+          <div><span class="detail-label">WhatsApp</span><a href="https://wa.me/21693484789" target="_blank" rel="noopener noreferrer">+216 93 484 789</a></div><button class="copy-button" data-copy="+21693484789" aria-label="Copier le numéro WhatsApp">Copier</button>
         </div>
         <div class="detail-card">
           <span class="detail-icon" aria-hidden="true">⌖</span>
@@ -75,6 +76,14 @@
   </main>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('.copy-button').forEach((button) => {
+      button.addEventListener('click', async () => {
+        await navigator.clipboard.writeText(button.dataset.copy);
+        button.textContent = 'Copié';
+        button.classList.add('copied');
+        setTimeout(() => { button.textContent = 'Copier'; button.classList.remove('copied'); }, 1800);
+      });
+    });
     const card = document.querySelector('.profile-card');
     window.addEventListener('pointermove', (event) => {
       const rect = card.getBoundingClientRect();
